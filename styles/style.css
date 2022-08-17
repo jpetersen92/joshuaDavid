@@ -235,7 +235,7 @@ html {
   overflow: hidden;
 }
 
-* {
+*, h1 {
   margin: 0;
   padding: 0;
 }
@@ -249,4 +249,31 @@ html {
 
 li {
   list-style: none;
+}
+
+#header nav, #header .navLinks, #header .title, #header .socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#header nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+}
+#header .title {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#header .navLinks li, #header .socialLinks li {
+  padding: 0 15px;
 }

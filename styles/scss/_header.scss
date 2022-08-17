@@ -1,0 +1,23 @@
+#header {
+
+    nav, .navLinks, .title, .socialLinks {
+        display: flex;
+        align-items: center;
+    }
+    nav {
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .title {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navLinks, .socialLinks {
+
+        li {
+            padding: 0 15px;
+        }
+    }
+}
